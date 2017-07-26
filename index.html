@@ -1,17 +1,52 @@
+
 <html>
+<link href="videojs/video-js.css" rel="stylesheet">
+<script src="videojs/video.js"></script>
+
 <title>D Mack's Webpage</title>
+
 <link rel="stylesheet" type="text/css" href="style.css">
+
 <div class="container">
+
   <div id="header">
     <h1 style="text-align: center;">D Mack's Webpage</h1>
   </div>
+
   <div id="sidebar">
     <h4 style="text-align: center;">Available downloads:</h4>
-
     <p style="text-align: center;"><a title="Direct Download" href="D'sCMD3.2.exe">D Mack's CMD</a></p>
     <p style="text-align: center;"><a title="Direct Download" href="Sysinternals.zip">Windows Sysinternals</a></p>
   </div>
-  <div id="content"></div>
-  <div id="footer"></div>
+
+  <div id="content" style="text-align: center;">
+    <p>D Mack's CMD Preview</p>
+    <div align="center">
+    <video id="video1" class="video-js vjs-default-skin vjs-big-play-centered" height="300" width="600" controls data-setup="{}">
+      <source src="mp4/dscmd32.mp4" type='video/mp4'>
+      <source src=" " type='video/webm'>
+      <source src=" " type='video/ogg'>
+      <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that
+        <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+      </div>
+    </video>
+
+    <p>Channel Trailer</p>
+
+    <div align="center">
+    <video id="video1" class="video-js vjs-default-skin vjs-big-play-centered" height="300" width="600" controls data-setup="{}">
+      <source src="mp4/Channeltrailer.mp4" type='video/mp4'>
+      <source src=" " type='video/webm'>
+      <source src=" " type='video/ogg'>
+      <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that
+        <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+      </div>
+    </video>
+    <script src="videojs/videojs.hotkeys.js"></script>
+    <script src="videojs/cfg.js"></script>
+  </div>
+
+<div id="footer"></div>
+
 </div>
 </html>
