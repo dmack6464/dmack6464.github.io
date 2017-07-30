@@ -16,13 +16,13 @@ body {
 #header { 
     border:1px 
     solid #000; 
-    height:100px; 
+    height:80px; 
     margin:0 0 1px 0;
 }
 #content { 
     border:1px 
     solid #000; 
-    margin:1px 0 1px 0;
+    margin:0 0 0 0;
     background-color: #101010;
 }
 #footer { 
