@@ -1,0 +1,54 @@
+
+body {
+  font-family: Sans-Serif;
+  color: white;
+  background-color: #303030;
+}
+.container { position:relative; padding:0 0 0 201px; }
+#sidebar {
+    position:absolute;
+    top:0; bottom:0; left:0;
+    border:1px 
+    solid #000; 
+    width:200px;  
+    background-color: #444444;
+}
+#header { 
+    border:1px 
+    solid #000; 
+    height:80px; 
+    margin:0 0 1px 0;
+}
+#content { 
+    border:1px 
+    solid #000; 
+    margin:0 0 0 0;
+    background-color: #101010;
+}
+#footer { 
+    border:1px 
+    solid #000; 
+    height:100px;
+    margin:1px 0 0 0;
+}
+
+
+/* unvisited link */
+a:link {
+    color: #11aaff;
+}
+
+/* visited link */
+a:visited {
+    color: #26B14C;
+}
+
+/* mouse over link */
+a:hover {
+    color: lightgreen;
+}
+
+/* selected link */
+a:active {
+    color: lightblue;
+}
