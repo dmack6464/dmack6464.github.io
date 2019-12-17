@@ -1,0 +1,122 @@
+
+
+
+body {
+  font-family: Sans-Serif;
+  color: #ccc;
+  background-color: #303030;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.alert {
+     display: block;
+    background: #088;
+    height: auto;
+    text-align: center;
+    font-weight: 600;
+}
+
+.container {
+    top: 0;
+    position: relative;
+    padding:0 0 0 201px; }
+#sidebar {
+    position:absolute;
+    top:0; bottom:0; left:0;
+    border:1px 
+    solid #000; 
+    width:200px;  
+    background-color: #444444;
+}
+.head { 
+    border:1px 
+    solid #000; 
+    height:80px; 
+    margin:0 0 1px 0;
+}
+#content { 
+    border:1px 
+    solid #000; 
+    margin:0 0 0 0;
+    background-color: #101010;
+}
+#footer { 
+    border:1px 
+    solid #000; 
+    height:100px;
+    margin:1px 0 0 0;
+}
+
+
+/* unvisited link */
+a:link {
+    color: #11aaff;
+}
+
+/* visited link */
+a:visited {
+    color: #26B14C;
+}
+
+/* mouse over link */
+a:hover {
+    color: lightgreen;
+}
+
+/* selected link */
+a:active {
+    color: lightblue;
+}
+
+hr  {
+    border-color: #303030;
+    display: block;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px
+}
+img {
+  max-width: 100%;
+  height: auto;
+  width: auto\9; /* ie8 */
+}
+
+.Profile {
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    padding: 8px;
+    margin: auto;
+    width: 150px;
+}
+.AvatarWrapper {
+    margin-right: 10px;
+}
+.NameWrapper {
+    width: 170px;
+}
+.Avatar {
+    height: 50px;
+    width: 50px;
+}
+.Name {
+    align-items: center;
+    display: flex;
+    line-height: 17px;
+}
+.NameContents {
+    font-size: 16px;
+}
+
+/* since becpming bi,ive got a crush on multiple people
+on de server just i never say a word about it, thanx for
+reading this and if u are the one id never leave, i hope
+i havent hurt your feelings, afterall i havent really
+acted upon my feelings to others nor do i intend to in
+the future! */
