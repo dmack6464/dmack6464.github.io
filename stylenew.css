@@ -1,10 +1,16 @@
 :root {
-    --text:#ccc;
+    --shade0:#1d1d21; /* shade colour 0 */
+    --shade1:#18181c; /* shade colour 1 */
+    --shade1a:#121216; /* shade colour 1a */
+    --shade2:#0f0f14; /* shade colour 2 */
+    --shade3:#09090D; /* shade colour 3 */
+    --main:#030307;       /*main color rgb(0,0,0) var(--main)*/
+    --text:#ddd;
 }
 body {
     font-family: Sans-Serif;
     color: var(--text);
-    background-color: #303030;
+    background-color: var(--shade0);
     margin-top: 0px;
     margin-bottom: 0px;
     margin-left: 0px;
@@ -42,17 +48,33 @@ body {
     position: absolute;
 }
 
+#toggleSidebar {
+    z-index: 9999;
+    position: fixed;
+    bottom: 1em;
+    left: 0;
+}
+#toggleSidebarSide {
+    z-index: 99999;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
 .container {
     position: relative;
-    padding:0 0 0 201px; }
+    padding-left: 201px;
+    }
 .sidebar {
     position:absolute;
-    top:0; bottom:0; left:0;
+    top:0;
+    bottom:0;
+    left:0;
     width:200px;  
-    background-color: #444444;
+    background-color: var(--shade1a);
 }
 .head { 
-
+    background: var(--shade0);
 }
 
 .headtext {
@@ -68,9 +90,10 @@ body {
     text-decoration: none;
 }
 .content { 
-    background-color: #101010;
+    background-color: var(--main);
 }
-#footer { 
+.footer { 
+    display: block;
     height:100px;
 }
 

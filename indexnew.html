@@ -19,18 +19,22 @@
 	</head>
 <body>
 
-	<div class="container">
+	<div class="container" id="container">
 		<div class="head">
 			<div class="headtext">
 				<a href="https://dmack6464.github.io">D Mack's Webpage</a>
 			</div>
 		</div>
 
-		<div class="alert" id="alert"><span id="closeAlert" onclick="closeAlert()">Close</span>Updates to repos and Discord activity by me will be limited until further notice. Sorry! :( You may still be able to contact me via my Telegram though.. t.me/dmack1012 // t.me/dmack6464
+		<span id="toggleSidebar" onclick="toggleSidebar()">Toggle Sidebar</span>
+		<span id="toggleSidebarSide" onclick="toggleSidebarSide()">Toggle Sidebar Side</span>
+
+		<div class="alert" id="alert">Updates to repos and Discord activity by me will be limited until further notice. Sorry! :( You may still be able to contact me via my Telegram though.. t.me/dmack1012 // t.me/dmack6464
 			<div>This is a beta version of my site, where I'm trying to redo the styling/code for it. It may be quite broken.</div>
+		<span id="closeAlert" onclick="closeAlert()">Close</span>
 		</div>
 
-		<div class="sidebar">
+		<div class="sidebar" id="sidebar">
 			<h4 style="text-align: center;">Available downloads</h4>
 			<p style="text-align: center;"><a title="Direct Download" href="D'sCMD3.5.exe">D Mack's CMD</a></p>
 			<p style="text-align: center;"><a title="Direct Download" href="Sysinternals.zip">Windows Sysinternals</a></p>
@@ -87,7 +91,7 @@
 			<script src="videojs/cfg2.js"></script>
 			<a href="https://greasyfork.org/en/scripts/34818-youtube-restore-classic">Disable YouTube's Polymer layout (go back to old layout)</a>
 		</div>
-		<div id="footer"></div>
+		<span class="footer"></span>
 	</div>
 </body>
 </html>
