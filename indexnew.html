@@ -1,4 +1,4 @@
-<html>`
+<html>
 	<head>
 
 		<title>D Mack's Webpage</title>
@@ -11,11 +11,14 @@
 
 		<link rel="stylesheet" type="text/css" href="stylenew.css">
 
+		<script src="index.js"></script>
+
 		<link href="videojs/video-js.css" rel="stylesheet">
 		<script src="videojs/video.js"></script>
 
 	</head>
 <body>
+
 	<div class="container">
 		<div class="head">
 			<div class="headtext">
@@ -23,11 +26,11 @@
 			</div>
 		</div>
 
-		<div class="alert">Updates to repos and Discord activity by me will be limited until further notice. Sorry! :( You may still be able to contact me via my Telegram though.. t.me/dmack1012 // t.me/dmack6464
+		<div class="alert" id="alert"><span id="closeAlert" onclick="closeAlert()">Close</span>Updates to repos and Discord activity by me will be limited until further notice. Sorry! :( You may still be able to contact me via my Telegram though.. t.me/dmack1012 // t.me/dmack6464
 			<div>This is a beta version of my site, where I'm trying to redo the styling/code for it. It may be quite broken.</div>
 		</div>
 
-		<div id="sidebar">
+		<div class="sidebar">
 			<h4 style="text-align: center;">Available downloads</h4>
 			<p style="text-align: center;"><a title="Direct Download" href="D'sCMD3.5.exe">D Mack's CMD</a></p>
 			<p style="text-align: center;"><a title="Direct Download" href="Sysinternals.zip">Windows Sysinternals</a></p>
@@ -58,7 +61,7 @@
 			</div>
 		</div>
 
-		<div id="content" style="text-align: center;">
+		<div class="content" style="text-align: center;">
 			<p>D Mack's CMD Preview</p>
 			<div align="center">
 				<video id="video1" class="video-js vjs-default-skin vjs-big-play-centered" height="300" width="600" controls data-setup="{}">
@@ -70,22 +73,21 @@
 			<script src="videojs/videojs.hotkeys.js"></script>
 			<script src="videojs/cfg1.js"></script>
 
-						<p>Channel Trailer</p>
-						<div align="center">
-							<video id="video2" class="video-js vjs-default-skin vjs-big-play-centered" height="300" width="600" controls data-setup="{}">
-								<source src="mp4/Channeltrailer.mp4" type='video/mp4'>
-									<source src=" " type='video/webm'>
-										<source src=" " type='video/ogg'>
-											<p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that
-											<a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
-										</div>
-									</video>
-									<script src="videojs/videojs.hotkeys.js"></script>
-									<script src="videojs/cfg2.js"></script>
-									<a href="https://greasyfork.org/en/scripts/34818-youtube-restore-classic">Disable YouTube's Polymer layout (go back to old layout)</a>
-								</div>
-
-								<div id="footer"></div>
-
-						</div>
-						</html>
+			<p>Channel Trailer</p>
+			<div align="center">
+				<video id="video2" class="video-js vjs-default-skin vjs-big-play-centered" height="300" width="600" controls data-setup="{}">
+				<source src="mp4/Channeltrailer.mp4" type='video/mp4'>
+				<source src=" " type='video/webm'>
+				<source src=" " type='video/ogg'>
+				<p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that
+				<a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+				</video>
+			</div>
+			<script src="videojs/videojs.hotkeys.js"></script>
+			<script src="videojs/cfg2.js"></script>
+			<a href="https://greasyfork.org/en/scripts/34818-youtube-restore-classic">Disable YouTube's Polymer layout (go back to old layout)</a>
+		</div>
+		<div id="footer"></div>
+	</div>
+</body>
+</html>

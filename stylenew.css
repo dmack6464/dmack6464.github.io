@@ -1,53 +1,77 @@
-
-
-
+:root {
+    --text:#ccc;
+}
 body {
-  font-family: Sans-Serif;
-  color: #ccc;
-  background-color: #303030;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  margin-left: 0px;
-  margin-right: 0px;
+    font-family: Sans-Serif;
+    color: var(--text);
+    background-color: #303030;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.sidebar p {
+    margin: 0.4em 0;
+}
+
+.sidebar h4 {
+    margin: 0.9em 0;
+}
+
+.content p:first-child {
+    margin-top: 0px!important;
 }
 
 .alert {
-     display: block;
+    position: relative;
+    display: block;
     background: #088;
+    color: #fff;
     height: auto;
     text-align: center;
     font-weight: 600;
 }
 
+#closeAlert {
+    color: #f66;
+    left: 0.5em;
+    bottom: -1.6em;
+    padding: 0.5em 0;
+    cursor: pointer;
+    position: absolute;
+}
+
 .container {
-    top: 0;
     position: relative;
     padding:0 0 0 201px; }
-#sidebar {
+.sidebar {
     position:absolute;
     top:0; bottom:0; left:0;
-    border:1px 
-    solid #000; 
     width:200px;  
     background-color: #444444;
 }
 .head { 
-    border:1px 
-    solid #000; 
-    height:80px; 
-    margin:0 0 1px 0;
+
 }
-#content { 
-    border:1px 
-    solid #000; 
-    margin:0 0 0 0;
+
+.headtext {
+    width: auto;
+    text-align: center;
+}
+.headtext,
+.headtext a {
+    line-height: 2em;
+    font-size: 1.5em;
+    color: #fff!important;
+    font-weight: 600;
+    text-decoration: none;
+}
+.content { 
     background-color: #101010;
 }
 #footer { 
-    border:1px 
-    solid #000; 
     height:100px;
-    margin:1px 0 0 0;
 }
 
 
