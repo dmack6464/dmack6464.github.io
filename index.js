@@ -7,6 +7,8 @@ function closeAlert() {
   }
 }
 
+//js file written by D Mack (dmack6464)
+
 function toggleSidebar() {
   var x = document.getElementById("container");
   var y = document.getElementById("sidebar");
@@ -33,3 +35,7 @@ function toggleSidebarSide() {
 		y.style.left = "unset";
 	}
 }
+
+window.onload = function() {
+  document.getElementById('nojs').style.display = 'none';
+};

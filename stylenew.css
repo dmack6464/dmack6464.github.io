@@ -39,6 +39,28 @@ body {
     font-weight: 600;
 }
 
+#nojs {
+    background: #800;
+}
+
+.errormark {
+    top: -1px;
+    position: relative;
+    line-height: 14px;
+    font-size: 13px;
+    font-weight: 1000;
+    text-align: center;
+    color: #800;
+    width: 14px;
+    background: #fff;
+    display: inline-block;
+}
+.errormark:before {
+    content: "";
+    display: inline-block;
+    animation: warn 1s infinite;
+}
+
 #closeAlert {
     color: #f66;
     left: 0.5em;
@@ -159,6 +181,12 @@ img {
 }
 .NameContents {
     font-size: 16px;
+}
+
+@keyframes warn {
+    0% { content: "!"; }
+    50% { content: ""; }
+    100% { content: "!"; }
 }
 
 /* since becpming bi,ive got a crush on multiple people
