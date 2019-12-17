@@ -52,8 +52,8 @@
 			text-align: center!important;
 			font-size: 3vh;
 		}
-		/* this is my second time trying to get adaptive layouts correct. */
-		@media (max-width: 470px) { /* instead of 480 for compat maybe */
+		/* this is my third time trying to get adaptive layouts correct. */
+		@media (pointer:none), (pointer:coarse) { /* droid info reported my width as 480 while chrome reported 980, so this will do for now. */
 			.stepwrap {
 				flex-direction: column;
 				display: block;
