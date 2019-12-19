@@ -120,6 +120,83 @@ body {
 }
 
 
+
+
+.projectContainer {
+    background: var(--shade3);
+    margin: 20px;
+    padding: 10px;
+    text-align: left;
+}
+
+.projectHead {
+    font-size: 20px;
+}
+
+
+.projectContainer .projectHead {
+    text-align: center;
+    padding: 0 0 10px 0;
+}
+
+.projectWrap .projectHead {
+    text-align: left;
+    margin-right: auto;
+}
+
+.projectCategoryName {
+    background: var(--shade2);
+    font-weight: 600;
+    color: #fff;
+    padding:6px 10px;
+}
+
+.projectCategory {
+    background: var(--shade2);
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: flex-start;
+    flex-wrap: nowrap;
+}
+
+.projectWrap {
+    background: var(--shade1);
+    margin: 6px 10px;
+    padding: 6px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+    flex-wrap: nowrap;
+}
+
+
+.profile {
+    align-items: center;
+    display: flex;
+    padding: 8px;
+    margin: auto;
+}
+.profileWrap {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.profileWrap img {
+    display: flex;
+    height: auto;
+}
+.profileLinks {
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
 /* unvisited link */
 a:link {
     color: #11aaff;
@@ -154,33 +231,6 @@ img {
   max-width: 100%;
   height: auto;
   width: auto\9; /* ie8 */
-}
-
-.Profile {
-    align-items: center;
-    box-sizing: border-box;
-    display: flex;
-    padding: 8px;
-    margin: auto;
-    width: 150px;
-}
-.AvatarWrapper {
-    margin-right: 10px;
-}
-.NameWrapper {
-    width: 170px;
-}
-.Avatar {
-    height: 50px;
-    width: 50px;
-}
-.Name {
-    align-items: center;
-    display: flex;
-    line-height: 17px;
-}
-.NameContents {
-    font-size: 16px;
 }
 
 @keyframes warn {
