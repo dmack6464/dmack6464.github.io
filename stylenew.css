@@ -10,19 +10,11 @@
 body {
     font-family: Sans-Serif;
     color: var(--text);
-    background-color: var(--shade0);
+    background-color: var(--main);
     margin-top: 0px;
     margin-bottom: 0px;
     margin-left: 0px;
     margin-right: 0px;
-}
-
-.sidebar p {
-    margin: 0.4em 0;
-}
-
-.sidebar h4 {
-    margin: 0.9em 0;
 }
 
 .content p:first-child {
@@ -30,6 +22,7 @@ body {
 }
 
 .alert {
+    padding: 0 60px;
     position: relative;
     display: block;
     background: #088;
@@ -41,6 +34,10 @@ body {
 
 #nojs {
     background: #800;
+}
+.nojsWaitForOnload {
+    font-family: monospace;
+    font-size: 10px;
 }
 
 .errormark {
@@ -85,8 +82,10 @@ body {
 
 .container {
     position: relative;
-    padding-left: 201px;
-    }
+    padding-left: 200px;
+}
+
+
 .sidebar {
     position:absolute;
     top:0;
@@ -95,6 +94,27 @@ body {
     width:200px;  
     background-color: var(--shade1a);
 }
+.sidebarWrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sidebarHead.first {
+    margin: 10px 0;
+}
+.sidebarHead {
+    color: #fff;
+    background: var(--shade0);
+    font-family: monospace;
+    font-weight: 600;
+    font-size: 16px;
+    margin: 26px 0 10px 0;
+    box-shadow: 2px 2px 5px 0 #000;
+}
+.sidebarLink {
+    margin: 6px 0;
+}
+
 .head { 
     background: var(--shade0);
 }
@@ -115,12 +135,22 @@ body {
     background-color: var(--main);
 }
 .footer { 
-    display: block;
+    display: none;
+    /*display: block;*/
     height:100px;
 }
 
 
+.videosWrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
 
+.video {
+    margin: auto;
+}
 
 .projectContainer {
     background: var(--shade3);
@@ -150,6 +180,9 @@ body {
     color: #fff;
     padding:6px 10px;
 }
+.projectCategoryName:not(.first) {
+    margin-top: 10px;
+}
 
 .projectCategory {
     background: var(--shade2);
@@ -162,6 +195,7 @@ body {
 }
 
 .projectWrap {
+    box-shadow: 2px 2px 5px 0 #000;
     background: var(--shade1);
     margin: 6px 10px;
     padding: 6px;
@@ -174,17 +208,15 @@ body {
 }
 
 
-.profile {
-    align-items: center;
-    display: flex;
-    padding: 8px;
-    margin: auto;
-}
 .profileWrap {
-    margin: auto;
+    margin: 26px auto 0 auto;
+    padding: 8px;
     display: flex;
+    align-items: center;
     flex-direction: row;
     align-items: center;
+    box-shadow: 2px 2px 5px 0 #000;
+    background: var(--shade0);
 }
 .profileWrap img {
     display: flex;

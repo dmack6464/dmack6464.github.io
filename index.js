@@ -1,10 +1,8 @@
 function closeAlert() {
   var x = document.getElementById("alert");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
+  var y = document.getElementById("closeAlert");
     x.style.display = "none";
-  }
+    y.style.display = "none";
 }
 
 //js file written by D Mack (dmack6464)
@@ -25,11 +23,11 @@ function toggleSidebarSide() {
 	var y = document.getElementById("sidebar");
 	if (y.style.right === "0px") {
 		x.style.paddingRight = "unset";
-		x.style.paddingLeft = "201px";
+		x.style.paddingLeft = "200px";
 		y.style.right = "unset";
 		y.style.left = "0";
 	} else {
-		x.style.paddingRight = "201px";
+		x.style.paddingRight = "200px";
 		x.style.paddingLeft = "unset";
 		y.style.right = "0";
 		y.style.left = "unset";

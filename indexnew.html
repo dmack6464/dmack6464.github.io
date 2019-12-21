@@ -7,7 +7,7 @@
 		/* patchup css goes here */
 		</style>
 
-		<meta name="description" content="The home of D's CMD and my YouTube/Discord links.">
+		<meta name="description" content="My Discord/YouTube links, projects including RealDark, PortaLock and MORE!!">
 
 		<link rel="stylesheet" type="text/css" href="stylenew.css">
 
@@ -35,26 +35,22 @@
 				JAVASCRIPT NOT DETECTED
 			</div>
 			This page won't work properly without JavaScript
+			<div class="nojsWaitForOnload">
+				If JS is enabled, removal of this alert may take a few seconds on low-end devices
+			</div>
 		</div>
-		<div class="alert" id="alert">Updates to repos and Discord activity by me will be limited until further notice. Sorry! :( You may still be able to contact me via my Telegram though.. t.me/dmack1012 // t.me/dmack6464
+		<div class="alert" id="alert">
+			<span id="closeAlert" onclick="closeAlert()">Close</span>
+			Updates to repos and Discord activity by me will be limited until further notice. Sorry! :( You may still be able to contact me via my Telegram though.. t.me/dmack1012 // t.me/dmack6464
 			<div>This is a beta version of my site, where I'm trying to redo the styling/code for it. It may be quite broken.</div>
-		<span id="closeAlert" onclick="closeAlert()">Close</span>
 		</div>
 
 		<div class="sidebar" id="sidebar">
-			<h4 style="text-align: center;">Available downloads</h4>
-			<p style="text-align: center;"><a title="Direct Download" href="D'sCMD3.5.exe">D Mack's CMD</a></p>
-			<p style="text-align: center;"><a title="Direct Download" href="Sysinternals.zip">Windows Sysinternals</a></p>
-			<p style="text-align: center;"><a title="Direct Download" href="PrtSc1.1.exe">PrintScreen 1.1</a></p>
-
-			<p>&nbsp;</p>
-			<h4 style="text-align: center;">Pages</h4>
-			<p style="text-align: center;"><a title="Blog Page" href="http://dmack6464.github.io/blog">Self-Hosted Blog</a></p>
-			<p style="text-align: center;"><a title="D's CMD Documentation" href="http://dmack6464.github.io/dscmd">D's CMD Documentation</a></p>
-
-			<p>&nbsp;</p>
-			<h4 style="text-align: center;">Where you can find me</h4>
-			<div class="profile">
+			<div class="sidebarWrap">
+				<div class="sidebarHead first">Available Downloads</div>
+				<a class="sidebarLink" href=" ">D's CMD (Unavailable)</a>
+				<div class="sidebarHead">Site Pages</div>
+				<a class="sidebarLink" href="https://dmack6464.github.io/dscmd">D's CMD Documentation</a>
 				<div class="profileWrap">
 					<img src="https://dmack6464.github.io/pfp50.png">
 					<div class="profileLinks">
@@ -68,33 +64,9 @@
 		</div>
 
 		<div class="content" style="text-align: center;">
-			<p>D Mack's CMD Preview</p>
-			<div align="center">
-				<video id="video1" class="video-js vjs-default-skin vjs-big-play-centered" height="300" width="600" controls data-setup="{}">
-					<source src="mp4/dscmd3.5.mp4" type='video/mp4'>
-					<p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that
-					<a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
-				</video>
-			</div>
-			<script src="videojs/videojs.hotkeys.js"></script>
-			<script src="videojs/cfg1.js"></script>
-
-			<p>Channel Trailer</p>
-			<div align="center">
-				<video id="video2" class="video-js vjs-default-skin vjs-big-play-centered" height="300" width="600" controls data-setup="{}">
-				<source src="mp4/Channeltrailer.mp4" type='video/mp4'>
-				<source src=" " type='video/webm'>
-				<source src=" " type='video/ogg'>
-				<p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that
-				<a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
-				</video>
-			</div>
-			<script src="videojs/videojs.hotkeys.js"></script>
-			<script src="videojs/cfg2.js"></script>
-			<a href="https://greasyfork.org/en/scripts/34818-youtube-restore-classic">Disable YouTube's Polymer layout (go back to old layout)</a>
 			<div class="projectContainer">
 				<div class="projectHead">Some projects of mine!</div>
-				<div class="projectCategoryName">BetterDiscord Themes</div>
+				<div class="projectCategoryName first">BetterDiscord Themes</div>
 				<div class="projectCategory">
 					<div class="projectWrap">
 						<a class="projectHead" href="https://github.com/dmack6464/RealDark/">RealDark</a>
@@ -116,12 +88,43 @@
 						<div class="projectText">PortaLock is a portable Windows lockscreen written in AutoHotkey.</div>
 					</div>
 					<div class="projectWrap">
-						<a class="projectHead" href="https://example.com/">Placeholder Text</a>
-						<div class="projectText">This is just a placeholder so I can see how a category with 3 projects would look, as well as a project with 3 lines.</div>
+						<a class="projectHead">D's CMD</a>
+						<div class="projectText">
+							A project I've been working on since 2016, written in Batch!
+							<div>Unfortunately, I haven't created a repo for it yet, but you can check out screenshots in the D's CMD Documentation.</div>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
+			<div class="videosWrap">
+				<div class="video">
+					<p>D Mack's CMD Preview</p>
+					<div align="center">
+						<video id="video1" class="video-js vjs-default-skin vjs-big-play-centered" height="300" width="600" controls data-setup="{}">
+							<source src="mp4/dscmd3.5.mp4" type='video/mp4'>
+							<p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that
+							<a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+						</video>
+					</div>
+					<script src="videojs/videojs.hotkeys.js"></script>
+					<script src="videojs/cfg1.js"></script>
+				</div>
+				<div class="video">
+					<p>Channel Trailer</p>
+					<div align="center">
+						<video id="video2" class="video-js vjs-default-skin vjs-big-play-centered" height="300" width="600" controls data-setup="{}">
+						<source src="mp4/Channeltrailer.mp4" type='video/mp4'>
+						<source src=" " type='video/webm'>
+						<source src=" " type='video/ogg'>
+						<p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that
+						<a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+						</video>
+					</div>
+					<script src="videojs/videojs.hotkeys.js"></script>
+					<script src="videojs/cfg2.js"></script>
+				</div>
+			</div>
+			<a href="https://greasyfork.org/en/scripts/34818-youtube-restore-classic">Disable YouTube's Polymer layout (go back to old layout)</a>
 		<span class="footer"></span>
 	</div>
 </body>
