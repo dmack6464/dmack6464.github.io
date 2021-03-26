@@ -99,7 +99,7 @@ window.onload = function() {
           fields: [
             {
               name: 'URL paramaters:',
-              value: queryString,
+              value: queryString + ".",
             },
             {
               name: 'User Agent:',
