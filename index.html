@@ -1,3 +1,4 @@
+
 <html>
 	<head>
 
@@ -20,29 +21,9 @@
 <body>
 
 	<div class="container" id="container">
-		<div class="head">
-			<div class="headtext">
-				<a href="https://dmack6464.github.io">D Mack's Webpage</a>
-			</div>
-		</div>
 
 		<span id="toggleSidebar" onclick="toggleSidebar()">Toggle Sidebar</span>
 		<span id="toggleSidebarSide" onclick="toggleSidebarSide()">Toggle Sidebar Side</span>
-
-		<div class="alert" id="nojs">
-			<div>
-				<div class="errormark"></div>
-				JAVASCRIPT NOT DETECTED
-			</div>
-			This page won't work properly without JavaScript
-			<div class="nojsWaitForOnload">
-				If JS is enabled, removal of this alert may take a few seconds on low-end devices
-			</div>
-		</div>
-		<div class="alert" id="alert">
-			<span id="closeAlert" onclick="closeAlert()">Close</span>
-			<div>This is a beta version of my site, where I'm trying to redo the styling/code for it. It may be quite broken.</div>
-		</div>
 
 		<div class="sidebar" id="sidebar">
 			<div class="sidebarWrap">
@@ -64,6 +45,25 @@
 		</div>
 
 		<div class="content" style="text-align: center;">
+			<div class="head">
+				<div class="headtext">
+					<a href="https://dmack6464.github.io">D Mack's Webpage</a>
+				</div>
+			</div>
+			<div class="alert" id="nojs">
+				<div>
+					<div class="errormark"></div>
+					JAVASCRIPT NOT DETECTED
+				</div>
+				This page won't work properly without JavaScript
+				<div class="nojsWaitForOnload">
+					If JS is enabled, removal of this alert may take a few seconds on low-end devices
+				</div>
+			</div>
+			<div class="alert" id="alert" style="display: none;" >
+				<span id="closeAlert" onclick="closeAlert()">Close</span>
+				<div>This is a beta version of my site, where I'm trying to redo the styling/code for it. It may be quite broken.</div>
+			</div>
 			<div class="projectContainer">
 				<div class="projectHead">Some projects of mine!</div>
 				<div class="projectCategoryName first">BetterDiscord Themes</div>

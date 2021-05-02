@@ -9,16 +9,42 @@ function closeAlert() {
 
 function toggleSidebar() {
   var x = document.getElementById("container");
+  if (x.classList.contains("sidebarOpen")) {
+    x.classList.remove("sidebarOpen");
+    x.classList.add("sidebarClosed");
+    return;
+  }
+  if (x.classList.contains("sidebarClosed")) {
+    x.classList.remove("sidebarClosed");
+    x.classList.add("sidebarOpen");
+    return;
+  }
+}
+
+function oldtoggleSidebar() {
+  var x = document.getElementById("container");
   var y = document.getElementById("sidebar");
   if (x.style.paddingLeft === "0px") {
     x.style.paddingLeft = "201px";
     y.style.display = "block";
-  } else {
-    x.style.paddingLeft = "0px";
-    y.style.display = "none";
   }
 }
+
 function toggleSidebarSide() {
+  var x = document.getElementById("container");
+  if (x.classList.contains("sidebarLeft")) {
+    x.classList.remove("sidebarLeft");
+    x.classList.add("sidebarRight");
+    return;
+  }
+  if (x.classList.contains("sidebarRight")) {
+    x.classList.remove("sidebarRight");
+    x.classList.add("sidebarLeft");
+    return;
+  }
+}
+
+function oldtoggleSidebarSide() {
   var x = document.getElementById("container");
   var y = document.getElementById("sidebar");
   if (y.style.right === "0px") {
@@ -36,6 +62,11 @@ function toggleSidebarSide() {
 
 window.onload = function() {
   document.getElementById('nojs').style.display = 'none';
+
+  // configure sidebar
+  var x = document.getElementById("container");
+  x.classList.add("sidebarClosed");
+  x.classList.add("sidebarLeft");
 
   //date/time
   const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;

@@ -68,26 +68,24 @@ body {
 }
 
 #toggleSidebar {
+    font-size: 2.8vh;
+    animation: flash 1s infinite;
     z-index: 9999;
     position: fixed;
     bottom: 1em;
     left: 0;
 }
 #toggleSidebarSide {
-    z-index: 99999;
+    font-size: 2.8vh;
+    z-index: 9999;
     position: fixed;
     bottom: 0;
     left: 0;
 }
 
-.container {
-    position: relative;
-    padding-left: 200px;
-}
-
-
 .sidebar {
-    position:absolute;
+    z-index: 2;
+    position:fixed;
     top:0;
     bottom:0;
     left:0;
@@ -209,7 +207,9 @@ body {
 
 
 .profileWrap {
-    margin: 26px auto 0 auto;
+    /*bottom: 0;
+    position: absolute;*/
+    margin: 26px auto 100px auto;
     padding: 8px;
     display: flex;
     align-items: center;
@@ -269,6 +269,81 @@ img {
     0% { content: "!"; }
     50% { content: ""; }
     100% { content: "!"; }
+}
+
+@keyframes flash {
+    0% { opacity: 1; }
+    50% { opacity: 0.4; }
+    100% {}
+}
+
+.content {
+    z-index: 1;
+    position: relative;
+    padding-left: 200px; /* no js */
+}
+
+.sidebarLeft.sidebarOpen .content {
+    padding-left: 200px;
+}
+.sidebarRight.sidebarOpen .content {
+    padding-right: 200px;
+    padding-left: 0px; /* no js fix */
+}
+
+.sidebarClosed .sidebar {
+    display: none;
+}
+.sidebarOpen .sidebar {
+
+}
+.sidebarClosed .content {
+    padding-left: 0px;
+}
+.sidebarOpen .content {
+
+}
+.sidebarRight .sidebar {
+    left: unset;
+    right: 0;
+}
+
+/* experimental mobile adaptive layout */
+@media (pointer:none), (pointer:coarse) {
+    body {
+        font-size: 2.6vh;
+    }
+    .sidebarHead {
+        font-size: 2.4vh;
+    }
+    .projectHead {
+        font-size: 2.8vh;
+    }
+
+    .sidebarOpen .sidebar {
+        width: 45vw;
+    }
+    .container {
+        padding-left: 0px;
+    }
+
+    .sidebarClosed .sidebar {
+        display: none;
+    }
+    .sidebarOpen .sidebar {
+
+    }
+    .sidebarClosed .content {
+        padding-left: 0px;
+    }
+    .sidebarOpen .content {
+        opacity: 0.5;
+        padding: 0px!important;
+    }
+    .sidebarRight .sidebar {
+        left: unset;
+        right: 0;
+    }
 }
 
 /* since becpming bi,ive got a crush on multiple people
