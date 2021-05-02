@@ -342,6 +342,10 @@ img {
         left: unset;
         right: 0;
     }
+    video {
+        width: 100vw!important;
+        height: 50vw!important;
+    }
 }
 
 /* since becpming bi,ive got a crush on multiple people
