@@ -342,8 +342,7 @@ img {
         left: unset;
         right: 0;
     }
-    .video > div video,
-    .video > div div {
+    .video-js {
         width: 100vw!important;
         height: 50vw!important;
     }
