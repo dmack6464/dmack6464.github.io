@@ -183,6 +183,7 @@ body {
 }
 
 .projectCategory {
+    overflow-x: scroll;
     background: var(--shade2);
     width: auto;
     display: flex;
@@ -320,25 +321,22 @@ img {
         font-size: 2.8vh;
     }
 
-    .sidebarOpen .sidebar {
-        width: 45vw;
-    }
     .container {
         padding-left: 0px;
     }
 
+    .sidebarOpen .sidebar {
+        width: 45vw;
+    }
     .sidebarClosed .sidebar {
         display: none;
-    }
-    .sidebarOpen .sidebar {
-
-    }
-    .sidebarClosed .content {
-        padding-left: 0px;
     }
     .sidebarOpen .content {
         opacity: 0.5;
         padding: 0px!important;
+    }
+    .sidebarClosed .content {
+        padding-left: 0px;
     }
     .sidebarRight .sidebar {
         left: unset;
